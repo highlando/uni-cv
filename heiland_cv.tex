@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+\usepackage{geometry} % Allows the configuration of document margins
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Jan Heiland - vita},pdfauthor={Jan Heiland}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\sffamily\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\sffamily\mdseries\upshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\sffamily\mdseries\upshape\large} % Set font options for subsubsections
+% \chardef\&="E050 % Custom ampersand character
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\sffamily
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Jan Heiland}\\[1cm] % Your name
+Max-Planck-Institut f\"ur Dynamik komplexer technischer Systeme\\ % Your address
+Sandtorstr. 1\\
+39106 Magdeburg \\[.2cm]
+Phone: \texttt{0391-6110-476}\\ [.2cm]
+Email: \href{mailto:heiland@mpi-magdeburg.mpg.de}{heiland@mpi-magdeburg.mpg.de}\\ % Your email address
+Home: \href{http://www.mpi-magdeburg.mpg.de/823023/cacsd}{www.mpi-magdeburg.mpg.de/823023/cacsd}\\ % Your academic/personal website
+Home: \href{http://www.janheiland.de}{www.janheiland.de}\\[.3in] % Your academic/personal website
+
+% \vfill % Whitespace between contact information and specific CV information
+
+%------------------------------------------------
+
+Born: January 21, 1983---Friedrichshafen, Germany\\ % Your date of birth
+Nationality: German
+
+%------------------------------------------------
+
+\section*{Current Position}
+
+\emph{Postdoctoral Researcher} and \emph{Team Leader}, Max Planck Institute for Dynamics of Complex Technical Systems, Magdeburg, Germany % Your current or previous employment position
+
+%------------------------------------------------
+
+\section*{Areas of Specialization}
+
+\textbf{Differential-algebraic Equations}; \textbf{Navier--Stokes Equations};\textbf{Optimal Control};  \\System Theory; Model Reduction; Numerical Analysis
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Former Positions}
+
+\years{2007-2009}Student Employee at Bombardier Transportation, Department \emph{Special Engineering for Aerodynamics and Acoustics}, Berlin\\
+\years{2009-2013}Full-time research assistant at TU Berlin, Department of Mathematics, Berlin\\
+\years{2013-current}Postdoctoral researcher at MPI Magdeburg, Department \emph{Computational Methods in Systems and Control Theory}, Magdeburg\\
+\years{2014-current}Team leader of the team \emph{Computer Aided Control System Design} at the MPI, Magdeburg
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Education}
+
+\years{2009}\textsc{Diploma} in technical mathematics, TU Berlin\\
+\years{2014}\textsc{PhD} in mathematics, TU Berlin
+
+%----------------------------------------------------------------------------------------
+%	GRANTS, HONORS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\newpage
+\section*{Scholarships, Research Stays \& Honours}
+\years{2010-2013}PhD scholarship by \emph{Studienstiftung des dt. Volkes}\\
+\years{2012}Research stay at TUCOROM Poitiers, France, invited by Prof. B. Noack\\
+\years{2014}\emph{Research in Pairs} at \emph{Mathematisches Forschungsinstitut Oberwolfach}\\
+\years{2015,2016} Research stay at Shanghai University, China, in the course of the \emph{Recruitment Program of High-end Foreign Experts}\\
+\years{2017} \emph{DAAD travel award} for visiting the \emph{CDC} in Australia\\
+\years{2015-current} Open Access Ambassador of the \emph{Max Planck Society}
+
+\section*{Service to the Community}
+\years{2014-current} Reviewer for  \emph{Acta Appl. Math.} --- \emph{Automatica} --- \emph{Electron. Trans. Numer. Anal.} --- \emph{Math. Control Signals Systems} --- \emph{SIAM J. Sci. Comput.} --- and several conference proceedings\\
+\years{2015}Organization of the young researcher minisymposium \emph{Analysis, Applications and Approximation of Constrained PDEs} at the GAMM annual meeting in Lecce, Italy\\
+\years{2015}Organization of the minisymposium \emph{Numerical Approximation of DAEs and Constrained PDEs with Applications} at the ICIAM 2015 in Beijing, China\\
+\years{2016}Organization of the workshop \emph{Modelling, Model Reduction, and Optimization of Flows} in Shanghai, China \\
+\years{2017}Organization of the mini symposium \emph{MS 28 -- Model reduction methods for simulation and (optimal) control} at the Enumath 2017 in Voss, Norway\\
+\years{2018}Organization of the young researcher workshop \emph{Analysis and Numerical Approximation of Constrained Systems} in Sion, Switzerland
+\newpage
+\section*{Teaching}
+\subsection*{Courses}
+\years{2015} Short Course on \emph{Model Reduction of Linear Time Invariant Systems}. Shanghai University, Shanghai, China\\
+\years{2016} Lecture (4 SWS) on \emph{Differential Algebraic Equations}. Summer Term 2016. Otto von Guericke Universität, Magdeburg \\
+\years{2017} Lecture (4 SWS) on \emph{Funktionentheorie (Complex Analysis, in German)}. Winter Term 2017. Otto von Guericke Universität, Magdeburg
+\subsection*{Assistance}
+\years{2010-2012} \emph{Mathematik für PhysikerInnen IV}, \emph{Numerik 1 (f\"ur Ingenieure)} and \emph{Numerik 2}. TU Berlin
+\subsection*{BA/MA Theses}
+\years{2011} Manuel Baumann, BA, TU Berlin: \emph{Modellierung und Simulation von Dispersionen in turbulenter Strömung}\\
+\years{2015} Max Behr, MA, OvGU Magdeburg: \emph{Optimierung und Stabilisierung von inkompressiblen Strömungen in M.E.S.S.}\\
+\years{2016} Bj\"orn Baran, MA, OvGU Magdeburg: \emph{Optimal Control of a Stefan Problem with Gradient-Based Methods in FEniCS}
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS AND TALKS SECTION
+%----------------------------------------------------------------------------------------
+
+\newpage
+\section*{Publications}
+
+\vspace{.1in}
+\subsection*{Journal Publications}
+
+\years{2018} \emph{Regularization and Rothe Discretization of Semi-Explicit Operator DAEs}. International Journal of Numerical Analysis and Modeling, Vol. 15(3). pp. 452-477. (with R. Altmann) \\
+
+\years{2017} \emph{Exponential Stability and Stabilization of Extended Linearizations via Continuous Updates of Riccati Based Feedback}. International Journal of Robust and Nonlinear Control, online first. (with P. Benner) \\
+
+\years{2017} \emph{Moment-Matching Based Model Reduction for Navier--Stokes Type Quadratic-Bilinear Descriptor Systems}. ZAMM - Journal of Applied Mathematics and Mechanics, online first. (with M. I. Ahmad, P. Benner, and P. Goyal) \\
+
+\years{2017} \emph{Simulation of multibody systems with servo constraints through optimal control}. Multibody System Dynamics, Vol. 40(1), pp. 75-98. (with R. Altmann) \\
+
+\years{2016} \emph{A Differential-Algebraic Riccati Equation for Applications in Flow Control}. SIAM Journal on Control and Optimization, Vol. 54(2), pp. 718-739.\\
+
+\years{2015} \emph{Finite Element Decomposition and Minimal Extension for Flow Equations}. M2AN - Mathematical Modelling and Numerical Analysis, Vol. 49(5), pp. 1489-1509. (with R. Altmann) \\
+
+\years{2012} \emph{Distributed control of linearized Navier-Stokes equations via discretized input/output maps}. ZAMM - Journal of Applied Mathematics and Mechanics. Vol. 92(4), pp. 257-274. (with V. Mehrmann) 
+
+
+\vspace{.1in}
+\subsection*{Peer-reviewed Conference Proceedings and Book Chapters}
+
+\years{2017} \emph{Nonlinear Stabilizing Feedback Design for Incompressible Flows via Updated Riccati-Based Gains}. Proceedings of the Proceedings of the IEEE Conference on Decision and Control 2017, accepted. (with P. Benner) \\ 
+
+\years{2017} \emph{Convergence of Approximations to Riccati-based Boundary-feedback Stabilization of Laminar Flows}. IFAC-PapersOnLine IFAC, Vol. 50(1), pp. 12296-12300. (with P. Benner)\\
+
+\years{2016} \emph{Robust Stabilization of Laminar Flows in Varying Flow Regimes}. IFAC-PapersOnLine, IFAC. Vol. 49(8), pp. 31-36. (with P. Benner)\\
+\newpage
+\years{2015} \emph{Discrete Input/Output Maps and their Relation to Proper Orthogonal Decomposition}. Numerical Algebra, Matrix Theory, Differential-Algebraic Equations and Control Theory. Festschrift in Honor of Volker Mehrmann. Springer, pp. 585-608. (with M. Baumann and M. Schmidt) \\
+
+\years{2015} \emph{LQG-Balanced Truncation Low-Order Controller for Stabilization of Laminar Flows}. Active Flow and Combustion Control 2014, Springer. pp. 365-379. (with P. Benner) \\
+
+\years{2010} \emph{A new discretization framework for input/output maps and its application to flow control}. Active Flow Control. Papers contributed to the Conference, Springer, pp. 357-372. (with V. Mehrmann and M. Schmidt) 
+
+\vspace{.1in}
+\subsection*{Proceedings and Posters}
+\years{2015} \emph{A generalized POD space-time Galerkin scheme for parameter dependent dynamical systems}. Poster at MoRePaS 2015 - Model Reduction of Parametrized Systems III, Trieste, Italy. (with M. Baumann, and P. Benner)\\
+
+\years{2010} \emph{Simulation and Control of Drop Size Distributions in Stirred Liquid/Liquid Systems}. Proc. 4th International Conference on Population Balance Modelling, September 15-17 2010, Berlin. (with M. Baumann, A. Walle, V. Mehrmann, and M. Schäfer)\\
+
+\years{2009} \emph{Shape Optimization in Train Aerodynamics}. Proceedings of Euromech Colloquium 509 Vehicle Dynamics, Berlin. (with A. Herbst, J. Mauss, and A. Orellano)
+
+\vspace{.1in}
+\subsection*{Selected Preprints}
+
+\years{2016} \emph{Best Practices for Replicability, Reproducibility and Reusability of Computer-Based Experiments Exemplified by Model Reduction Software}. arXiv:1607.01191. (with J. Fehr, C. Himpe, and J. Saak)\\
+
+\years{2015} \emph{Simulation of Multibody Systems with Servo Constraints through Optimal Control}. Oberwolfach Preprint OWP 2015-18. (with R. Altmann )\\
+
+\years{2015} \emph{Time-dependent Dirichlet Conditions in Finite Element Discretizations}. ScienceOpen Research. (with P. Benner)
+\newpage
+\vspace{.1in}
+\subsection*{Publication of Code}
+\years{2015}\texttt{spacetime-genpod-burgers}. A \emph{Python} implementation of a generalized space-time POD method with application to optimal control of the Burgers' equation\\
+
+\years{2014}\texttt{lqgbt-oseen}. A \emph{Python} implementation of the LQGBT approach to low-dimensional controllers for the stabilization of incompressible flows. Application example: Stabilization of the cylinder wake\\
+
+\years{2014}\texttt{dolfin-navier-scipy}. A \emph{Python} interface between \emph{FEniCS} for Finite Element discretizations of flow equations and \emph{Scipy} for time integration, model reduction, or control algorithms
+\vfill
+For weblinks to the publications see \href{http://www.janheiland.de/publications}{www.janheiland.de/publications}
+%------------------------------------------------
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+% \vfill{} % Whitespace before final footer
+% 
+% %----------------------------------------------------------------------------------------
+% %	FINAL FOOTER
+% %----------------------------------------------------------------------------------------
+% 
+% \begin{center}
+% {\scriptsize Last updated: \today\- •\- \href{http://www.LaTeXTemplates.com}{http://www.LaTeXTemplates.com}} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+% \end{center}
+% 
+% %----------------------------------------------------------------------------------------
+
+\end{document}
