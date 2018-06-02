@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+\usepackage{geometry} % Allows the configuration of document margins
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Jan Heiland - vita},pdfauthor={Jan Heiland}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\sffamily\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\sffamily\mdseries\upshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\sffamily\mdseries\upshape\large} % Set font options for subsubsections
+% \chardef\&="E050 % Custom ampersand character
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\sffamily
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Jan Heiland}\\[1cm] % Your name
+Email: \href{mailto:heiland@mpi-magdeburg.mpg.de}{heiland@mpi-magdeburg.mpg.de}\\ % Your email address
+Home: \href{http://www.janheiland.de}{www.janheiland.de}\\[.3in] % Your academic/personal website
+
+% \vfill % Whitespace between contact information and specific CV information
+
+%------------------------------------------------
+
+\section*{Publications}
+
+All articles are original research articles.
+\vspace{.1in}
+\subsection*{Journal Publications}
+\input{chap-publications-journal-papers}
+
+\vspace{.1in}
+% \newpage
+\subsection*{Peer-reviewed Conference Proceedings and Book Chapters}
+\input{chap-publications-book-prconfs}
+
+\vspace{.1in}
+\subsection*{Proceedings and Posters}
+\input{chap-publications-proceedings-posters}
+
+\newpage
+\subsection*{Selected Preprints}
+\input{chap-publications-preprints}
+
+\newpage
+\vspace{.1in}
+\subsection*{Theses}
+\years{2014} PhD thesis -- \emph{Decoupling and optimization of differential-algebraic equations with application in flow control}. TU Berlin.\\
+
+\years{2009} Diploma thesis -- \emph{Distributed Control of Semidiscretized Oseen Equations}. TU Berlin.
+
+\vspace{.1in}
+\subsection*{Publication of Code}
+\input{chap-publications-code}
+
+\vfill
+For weblinks to the publications see \href{http://www.janheiland.de/publications}{www.janheiland.de/publications}
+%------------------------------------------------
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+% \vfill{} % Whitespace before final footer
+% 
+% %----------------------------------------------------------------------------------------
+% %	FINAL FOOTER
+% %----------------------------------------------------------------------------------------
+% 
+% \begin{center}
+% {\scriptsize Last updated: \today\- •\- \href{http://www.LaTeXTemplates.com}{http://www.LaTeXTemplates.com}} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+% \end{center}
+% 
+% %----------------------------------------------------------------------------------------
+
+\end{document}
